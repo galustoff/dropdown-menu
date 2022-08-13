@@ -118,6 +118,19 @@
   list-style: none;
   display: flex;
   column-gap: 68px;
+  transform: rotateX(90deg);
+  opacity: 0;
+  transition-property: transform opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+}
+
+.header__link:hover~.dropdown,
+.header__angle-down:hover~.dropdown,
+.dropdown:hover {
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .dropdown__title {
