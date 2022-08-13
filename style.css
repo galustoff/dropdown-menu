@@ -87,7 +87,7 @@
 
 .header__link:hover+.header__angle-down,
 .header__angle-down:hover {
-  bottom: 10px;
+  bottom: 14px;
   opacity: 1;
 }
 
