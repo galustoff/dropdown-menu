@@ -43,12 +43,51 @@
 }
 
 .header__list-item {
-  padding-top: 33px;
-  padding-bottom: 37px;
   position: relative;
 }
 
-/****************************************/
+.header__link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 37px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+}
+
+.header__link_simple::after {
+  content: "";
+  position: absolute;
+  bottom: 33px;
+  left: 50%;
+  border-bottom: 2px solid #fff;
+  width: 0;
+  transition-property: left width;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.header__link_simple:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.header__search-button {
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: #7075F4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header__search-button>i {
+  transform: scale(1.6);
+}
+
+/*  DROPDOWN  */
 
 .dropdown {
   position: absolute;
@@ -62,10 +101,6 @@
   display: flex;
   column-gap: 68px;
 }
-
-/* .dropdown__item {
-  
-} */
 
 .dropdown__title {
   width: fit-content;
@@ -106,71 +141,4 @@
 .dropdown__link:hover::after {
   left: 0;
   width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****************************************/
-
-.header__link {
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  position: relative;
-}
-
-.header__link_simple::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  border-bottom: 2px solid #fff;
-  width: 0;
-  transition-property: left width;
-  transition-duration: 300ms;
-  transition-timing-function: ease;
-}
-
-.header__link_simple:hover::after {
-  left: 0;
-  width: 100%;
-}
-
-/* .header__angle-down {
-  width: 100%;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  padding-top: 0;
-}
-
-.header__dropdown-item:hover .header__angle-down {
-  height: 30px;
-  padding-top: 8px;
-} */
-
-.header__search-button {
-  width: 23px;
-  height: 23px;
-  border: none;
-  background-color: #7075F4;
-  color: #fff;
-  cursor: pointer;
-}
-
-.header__search-button>i {
-  transform: scale(1.6);
 }
