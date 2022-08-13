@@ -45,6 +45,46 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  position: relative;
+}
+
+.header__link_simple::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  border-bottom: 2px solid #fff;
+  width: 0;
+  transition-property: left width;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.header__link_simple:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.header__dropdown-item {
+  position: relative;
+}
+
+.header__angle-down {
+  display: block;
+  width: 14px;
+  height: 18px;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 7px);
+  opacity: 0;
+  transition-property: bottom opacity;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
+
+.header__link_dropdown:hover+.header__angle-down {
+  bottom: -22px;
+  opacity: 1;
 }
 
 .header__search-button {
