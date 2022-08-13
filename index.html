@@ -17,16 +17,59 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">Logo</div>
+
       <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><a href="#" class="header__link header__link_simple">Home</a></li>
-          <li class="header__dropdown-item"><a href="#" class="header__link header__link_dropdown">Products</a><i
-              class="fa-solid fa-angle-down header__angle-down"></i>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="#" class="header__link header__link_simple">Home</a></li>
+
+          <li class="header__list-item"><a href="#" class="header__link">Products</a>
+            <!-- <div class="header__angle-down"><i class="fa-solid fa-angle-down"></i></div> -->
+            <ul class="dropdown">
+              <li class="dropdown__item">
+                <h4 class="dropdown__title">Living room</h4>
+
+                <hr>
+
+                <ul class="dropdown__inner-list">
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Coffee table</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Shelving</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">TV table</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown__item">
+                <h4 class="dropdown__title">Sofas and armchairs</h4>
+
+                <hr>
+
+                <ul class="dropdown__inner-list">
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Classic sofas</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Corner sofas</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Office sofas</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Rocking chairs</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Computer chairs</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown__item">
+                <h4 class="dropdown__title">Chairs</h4>
+
+                <hr>
+
+                <ul class="dropdown__inner-list">
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Wooden chairs</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Bar chairs</a></li>
+                  <li class="dropdown__inner-item"><a href="#" class="dropdown__link">Stools</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li><a href="#" class="header__link header__link_simple">About us</a></li>
-          <li><a href="#" class="header__link header__link_simple">Contact</a></li>
+
+          <li class="header__list-item"><a href="#" class="header__link header__link_simple">About us</a></li>
+          <li class="header__list-item"><a href="#" class="header__link header__link_simple">Contact</a></li>
         </ul>
       </nav>
+
       <div class="header__search"><button class="header__search-button"><i
             class="fa-solid fa-magnifying-glass"></i></button></div>
     </div>
