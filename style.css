@@ -1,3 +1,9 @@
+/**************************************
+
+COMMON
+
+**************************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +13,12 @@
   font-family: 'Open Sans', sans-serif;
   letter-spacing: -0.015em;
 }
+
+/**************************************
+
+HEADER
+
+**************************************/
 
 .header {
   background-color: #7075F4;
@@ -25,10 +37,22 @@
   align-items: center;
 }
 
+/**************************************
+
+LOGO
+
+**************************************/
+
 .header__logo {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+/**************************************
+
+NAVIGATION
+
+**************************************/
 
 .header__nav {
   width: 44%;
@@ -73,6 +97,12 @@
   width: 100%;
 }
 
+.header__link_dropdown:hover+.header__angle-down,
+.header__angle-down:hover {
+  bottom: 18px;
+  opacity: 1;
+}
+
 .header__angle-down {
   position: absolute;
   width: 14px;
@@ -89,28 +119,11 @@
   cursor: pointer;
 }
 
-.header__link:hover+.header__angle-down,
-.header__angle-down:hover {
-  bottom: 18px;
-  opacity: 1;
-}
+/**************************************
 
-.header__search-button {
-  width: 23px;
-  height: 23px;
-  border: none;
-  background-color: #7075F4;
-  background-image: url(./img/magnifying-glass-solid.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
+DROPDOWN
 
-.header__search-button>i {
-  transform: scale(1.6);
-}
-
-/*  DROPDOWN  */
+**************************************/
 
 .dropdown {
   position: absolute;
@@ -178,4 +191,25 @@
 .dropdown__link:hover::after {
   left: 0;
   width: 100%;
+}
+
+/**************************************
+
+SEARCH
+
+**************************************/
+
+.header__search-button {
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: #7075F4;
+  background-image: url(./img/magnifying-glass-solid.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.header__search-button>i {
+  transform: scale(1.6);
 }
