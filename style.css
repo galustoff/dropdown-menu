@@ -199,17 +199,25 @@ SEARCH
 
 **************************************/
 
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
 .header__search-button {
   width: 23px;
   height: 23px;
   border: none;
   background-color: #7075F4;
-  background-image: url(./img/magnifying-glass-solid.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
   cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  transition-property: opacity, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
 }
 
-.header__search-button>i {
-  transform: scale(1.6);
+.header__search-button:hover>.header__search-icon {
+  filter: drop-shadow(0 0 1px #4a4c89);
+  opacity: .95;
 }
