@@ -9,7 +9,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
   </style>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/4b19ed903f.js" crossorigin="anonymous"></script>
   <title>Dropdown Menu</title>
 </head>
 
@@ -23,7 +22,7 @@
           <li class="header__list-item"><a href="#" class="header__link header__link_simple">Home</a></li>
 
           <li class="header__list-item"><a href="#" class="header__link">Products</a>
-            <i class="fa-solid fa-angle-down header__angle-down"></i>
+            <div class="header__angle-down"></div>
             <ul class="dropdown">
               <li class="dropdown__item">
                 <h4 class="dropdown__title">Living room</h4>
@@ -64,8 +63,7 @@
         </ul>
       </nav>
 
-      <div class="header__search"><button class="header__search-button"><i
-            class="fa-solid fa-magnifying-glass"></i></button></div>
+      <div class="header__search"><button class="header__search-button"></button></div>
     </div>
   </header>
 </body>
